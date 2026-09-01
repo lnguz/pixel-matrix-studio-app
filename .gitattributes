@@ -1,0 +1,14 @@
+# Normaliza los finales de línea en el repositorio.
+* text=auto eol=lf
+
+# Scripts de Windows: CRLF en el disco local.
+*.ps1   text eol=crlf
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# Binarios: que Git no los toque.
+*.ico   binary
+*.exe   binary
+*.png   binary
+*.jpg   binary
+*.gif   binary

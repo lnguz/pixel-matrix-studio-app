@@ -1,0 +1,11 @@
+# Núcleo
+pypixelcolor>=0.4.0     # protocolo iPIXEL sobre BLE (ventanas 12 KB + CRC32 + ACK)
+bleak>=0.22             # escaneo BLE para localizar el panel
+Pillow>=10.0            # escalado, realce, empaquetado de GIF
+
+# Vídeo y espejo de pantalla
+opencv-python>=4.9      # decodificación de vídeo
+mss>=9.0                # captura de pantalla
+
+# Solo para compilar el .exe (no hace falta para ejecutar desde el código)
+# pyinstaller>=6.0

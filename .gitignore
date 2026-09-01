@@ -1,0 +1,83 @@
+# ---------------------------------------------------------------
+# Artefactos de compilación (PyInstaller)
+# ---------------------------------------------------------------
+build/
+dist/
+*.manifest
+# El ejecutable pesa ~80 MB y se regenera con build.ps1: no va al repo.
+PixelMatrixStudio.exe
+*.exe
+
+# El .spec lo regenera PyInstaller desde build.ps1.
+# Descoméntalo si prefieres versionarlo tras personalizarlo a mano:
+*.spec
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+sdist/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Herramientas y cachés
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+*.log
+
+# ---------------------------------------------------------------
+# Configuración local de la app
+# ---------------------------------------------------------------
+# La MAC del panel se guarda en %APPDATA%, pero por si acaso:
+PixelMatrixStudio.json
+
+# ---------------------------------------------------------------
+# Editores
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------------------------------------------------------------
+# Windows / OneDrive
+# ---------------------------------------------------------------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ---------------------------------------------------------------
+# Material de pruebas (GIFs e imágenes sueltas)
+# ---------------------------------------------------------------
+pruebas/
+*.gif
+!docs/*.gif
